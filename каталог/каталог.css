@@ -70,14 +70,15 @@ header {
 }
 
 .product-card {
-    background-color: #3a3a3a;
     border-radius: 5px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .product-card img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .add-btn {
@@ -91,5 +92,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-}
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: bold;
+    size: 15px;}
