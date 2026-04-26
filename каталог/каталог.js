@@ -30,11 +30,17 @@ function renderProducts() {
         const img = document.createElement('img');
         img.src = product.img
 
+        const text = document.createElement('div')
+        text.className = 'text';
+        text.textContent = product.name
+
         const addBtn = document.createElement('button');
         addBtn.className = 'add-btn';
-        addBtn.textContent = 'ДОБАВИТЬ В 🛒';
+        addBtn.textContent = product.name
+        addBtn.textContent ='ДОБАВИТЬ В 🛒';
 
         productCard.appendChild(img);
+        productCard.appendChild(text)
         productCard.appendChild(addBtn);
         productGrid.appendChild(productCard);
     });
@@ -75,3 +81,7 @@ function renderFilteredProducts(filteredProducts) {
 
 // Инициализация
 document.addEventListener('DOMContentLoaded', renderProducts);
+let logo = document.querySelector('.backBtn')
+document.addEventListener('mouseover', function(){
+    logo.style.transform = 'rotateZ(10deg)'
+})
