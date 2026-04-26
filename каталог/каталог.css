@@ -100,3 +100,12 @@ header {
     color: #FFFFFF;
     font-weight: bold;
     size: 15px;}
+
+.text {
+    background-color: white; 
+    height: 28px;
+    margin-top: -8px;
+    font-size: x-large;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;}
